@@ -22,6 +22,7 @@
     <link rel="stylesheet" href="assets/css/slick.css">
     <link rel="stylesheet" href="assets/css/nice-select.css">
     <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/floating-wpp.css">
 </head>
 <body>
 <!--? Preloader Start -->
@@ -36,6 +37,7 @@
     </div>
 </div>
 <!-- Preloader Start -->
+<div style="z-index: 500000;" id="myButton"></div>
 <header>
     <!-- Header Start -->
     <div class="header-area">
@@ -90,7 +92,7 @@
                                                     <li><a href="elements.html">Element</a></li>
                                                 </ul>
                                             </li> -->
-                                            <li><a href="contactenos.html">Contactenos</a></li>
+                                            <li><a href="#contacto">Contactenos</a></li>
                                         </ul>
                                     </nav>
                                 </div>
@@ -250,7 +252,7 @@
     <!-- Categories Area End -->
 
      <!--Aca comienza hexagono galeria-->
-     <div class="team-area">
+     <div class="team-area" id="galeria">
         <div class="container">
             <div class="row justify-content-center">
                 <div class="cl-xl-7 col-lg-8 col-md-10">
@@ -282,7 +284,7 @@
                         </div>
                         <p>La impresión en gran formato se refiere a imprimir materiales que son demasiado grandes para ser impreso en los tamaños de imprentas comerciales. Hace falta, por tanto, el uso de un equipo que pueda acomodarse a formatos de impresión más grandes de lo habitual.</p>
                         <p>En la impresión de gran formato, en lugar de imprimirse hojas individuales,  se usan rollos de impresión que se alimentan de forma incremental. A pesar del tamaño que pueden alcanzar estas impresiones, las nuevas tecnologías permiten alcanzar resoluciones verdaderamente increíbles.</p>
-                        <a href="about.html" class="btn">Saber más</a>
+                        <a href="#" class="btn">Saber más</a>
                     </div>
                 </div>
                 <div class="col-lg-6 col-md-12">
@@ -305,7 +307,7 @@
         <div class="container">
             <div class="row justify-content-end">
                 <!-- Contact wrapper -->
-                <div class="col-xl-8 col-lg-9">
+                <div class="col-xl-8 col-lg-9" id="contacto">
                     <div class="contact-form-wrapper">
                         <!-- From tittle -->
                         <div class="row">
@@ -573,20 +575,20 @@
                     <div class="home-blog-single mb-30">
                         <div class="blog-img-cap">
                             <div class="blog-img">
-                                <img src="assets/img/gallery/blog01.png" alt="">
+                                <img src="assets/img/gallery/blog01.png" alt="Productos Adhesivos">
                             </div>
                         </div>
                         <div class="blog-caption">
                             <div class="blog-date text-center">
                                 <span>27</span>
-                                <p>DIC</p>
+                                <p>ENE</p>
                             </div>
                             <div class="blog-cap">
                                 <ul>
-                                    <li><a href="#"><i class="ti-user"></i> Jessica Gomez</a></li>
+                                    <li><a href="#"><i class="ti-user"></i> Alex Herrera</a></li>
                                     <li><a href="#"><i class="ti-comment-alt"></i> 12</a></li>
                                 </ul>
-                                <h3><a href="blog_details.html">Esto es lo que debe saber antes.</a></h3>
+                                <h3><a href="#">Branding de nuestro Vehículo.</a></h3>
                             </div>
                         </div>
                     </div>
@@ -595,20 +597,20 @@
                     <div class="home-blog-single mb-30">
                         <div class="blog-img-cap">
                             <div class="blog-img">
-                                <img src="assets/img/gallery/blog1.png" alt="">
+                                <img src="assets/img/gallery/blog1.png" alt="plotter de corte">
                             </div>
                         </div>
                         <div class="blog-caption">
                             <div class="blog-date text-center">
                                 <span>27</span>
-                                <p>DIC</p>
+                                <p>ENE</p>
                             </div>
                             <div class="blog-cap">
                                 <ul>
-                                    <li><a href="#"><i class="ti-user"></i> Jessica Gomez</a></li>
+                                    <li><a href="#"><i class="ti-user"></i> Alex Herrera</a></li>
                                     <li><a href="#"><i class="ti-comment-alt"></i> 12</a></li>
                                 </ul>
-                                <h3><a href="blog_details.html">Esto es lo que debe saber antes.</a></h3>
+                                <h3><a href="#">Plotter de corte de hasta 1.50 metros.</a></h3>
                             </div>
                         </div>
                     </div>
@@ -617,20 +619,20 @@
                     <div class="home-blog-single mb-30">
                         <div class="blog-img-cap">
                             <div class="blog-img">
-                                <img src="assets/img/gallery/blog02.png" alt="">
+                                <img src="assets/img/gallery/blog02.png" alt="facilidades de pago">
                             </div>
                         </div>
                         <div class="blog-caption">
                             <div class="blog-date text-center">
                                 <span>27</span>
-                                <p>DIC</p>
+                                <p>ENE</p>
                             </div>
                             <div class="blog-cap">
                                 <ul>
-                                    <li><a href="#"><i class="ti-user"></i> Jessica Gomez</a></li>
+                                    <li><a href="#"><i class="ti-user"></i> Alex Herrera</a></li>
                                     <li><a href="#"><i class="ti-comment-alt"></i> 12</a></li>
                                 </ul>
-                                <h3><a href="blog_details.html">Esto es lo que debe saber antes.</a></h3>
+                                <h3><a href="#">Tenemos todas las fz|acilidades de pago.</a></h3>
                             </div>
                         </div>
                     </div>
@@ -673,7 +675,7 @@
                                 <ul>
                                     <li><a href="#">Sobre nosotros</a></li>
                                     <li><a href="#">Rapiprint</a></li>
-                                    <li><a href="#"> Galería de Trabajos</a></li>
+                                    <li><a href="#galeria"> Galería de Trabajos</a></li>
                                     <li><a href="#"> Política de privacidad</a></li>
                                 </ul>
                             </div>
@@ -697,9 +699,9 @@
                                 <ul>
                                     <li><a href="#">Material Reflectivo</a></li>
                                     <li><a href="#">Nano Carbono Cerámico</a></li>
-                                    <li><a href="#"> Plotter de Corte</a></li>
-                                    <li><a href="#"> Requerimientos de Diseño</a></li>
-                                    <li><a href="#"> Soluciones a su Publicidad</a></li>
+                                    <li><a href="#">Plotter de Corte</a></li>
+                                    <li><a href="#">Requerimientos de Diseño</a></li>
+                                    <li><a href="#">Soluciones a su Publicidad</a></li>
                                 </ul>
                             </div>
                         </div>
@@ -719,7 +721,7 @@
                             <div class="footer-social ">
                                 <a href="https://www.facebook.com/Rapi-Print-784769158397792" target="_blank"><i class="fab fa-facebook-f"></i></a>
                                 <a href="https://twitter.com/rapiprint" target="_blank"><i class="fab fa-twitter"></i></a>
-                                <a href="https://www.youtube.com/" target="_blank"><i class="fas fa-youtube"></i></a>
+                                <a href="https://www.youtube.com/" target="_blank"><i class="fab fa-youtube"></i></a>
                                 <a href="https://www.instagram.com/rapiprint1722/" target="_blank"><i class="fab fa-instagram"></i></a>
                             </div>
                         </div>
@@ -744,7 +746,7 @@
 </footer>
 <!-- Scroll Up -->
 <div id="back-top" >
-    <a title="Go to Top" href="#"> <i class="fas fa-level-up-alt"></i></a>
+    <a title="Ir arriba" href="#"> <i class="fas fa-level-up-alt"></i></a>
 </div>
 
     <!-- JS here -->
@@ -779,6 +781,27 @@
     <!-- Jquery Plugins, main Jquery -->	
     <script src="./assets/js/plugins.js"></script>
     <script src="./assets/js/main.js"></script>
+
+    <!-- Lo que pide chat de whatsapp -->
+    <script type="text/javascript" src="./assets/js/jquery-3.3.1.min.js"></script>
+    <script type="text/javascript" src="./assets/js/floating-wpp.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+    <script type="text/javascript">
+    $(function () {
+        $('#myButton').floatingWhatsApp({
+            phone: '573502423274',
+            popupMessage: 'Hola, Somos Rapiprint en que le ayudamos?',
+            message: "Quiero hacer una pregunta",
+            showPopup: true,
+            showOnIE: false,
+            headerTitle: 'Menciona #solucionesasupublicidad',
+            headerColor: '#25D366',
+            backgroundColor: '#25D366',
+            buttonImage: '<img src="./assets/img/adapt_icon/whatsapp.svg"/>'
+        });
+    });
+    </script>
     
 </body>
 </html>
