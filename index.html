@@ -23,6 +23,7 @@
     <link rel="stylesheet" href="assets/css/nice-select.css">
     <link rel="stylesheet" href="assets/css/style.css">
     <link rel="stylesheet" href="assets/css/floating-wpp.css">
+    <link rel="stylesheet" href="assets/css/rapi.css">
 </head>
 <body>
 <!--? Preloader Start -->
@@ -54,9 +55,9 @@
                             </div>
                             <div class="header-info-right">
                                 <ul class="header-social">    
-                                    <li><a href="https://twitter.com/rapiprint" target="_blank"><i class="fab fa-twitter"></i></a></li>
                                     <li><a href="https://www.facebook.com/Rapi-Print-784769158397792" target="_blank"><i class="fab fa-facebook-f"></i></a></li>
                                     <li><a href="https://www.instagram.com/rapiprint1722" target="_blank"><i class="fab fa-instagram"></i></a></li>
+                                    <li><a href="https://twitter.com/rapiprint" target="_blank"><i class="fab fa-twitter"></i></a></li>
                                     <li><a href="https://api.whatsapp.com/send?phone=573502423274&text=Hola!%20Habla%20Rapiprint%20en%20que%20podemos%20ayudar" target="_blank"><i class="fab fa-whatsapp"></i></a></li>
                                 </ul>
                             </div>
@@ -123,7 +124,7 @@
                     <div class="row">
                         <div class="col-xl-9 col-lg-9">
                             <div class="hero__caption">
-                                <h1><span>#Soluciones</span>a<span>su</span>publicidad</h1>
+                                <h1 style="text-shadow: 0px 0px 6px rgba(13, 18, 68, 1)"><span>#Soluciones</span>a<span>su</span>publicidad</h1>
                             </div>
                             <!--Hero form 
                             <form action="#" class="search-box">
@@ -136,7 +137,7 @@
                             </form>-->	
                             <!-- Hero Pera -->
                             <div class="hero-pera">
-                                <p>15 Años trabajando para la industria publicitaria</p>
+                                <p style="text-shadow: 2px 2px 2px rgba(13, 18, 68, 1);">15 Años trabajando para la industria publicitaria</p>
                             </div>
                         </div>
                     </div>
@@ -167,7 +168,7 @@
                         </div>
                         <div class="info-caption">
                             <p>Domingos Cerrado</p>
-                            <span>Lunes a Viernes de 8:00 AM a 5:00 PM • Sabados 8:00 AM • 3:00 PM</span>
+                            <span>Lunes a Viernes de 8:00 AM a 6:00 PM • Sabados 8:00 AM • 3:00 PM</span>
                         </div>
                     </div>
                 </div>
@@ -279,12 +280,16 @@
                     <div class="about-caption mb-50">
                         <!-- Section Tittle -->
                         <div class="section-tittle mb-35">
-                            <span>Somos Rapiprint - Soluciones a su Publicidad</span>
-                            <h2>15 Años trabajando para la industria Publicitaria</h2>
+                            <!-- <span>Somos Rapiprint - Soluciones a su Publicidad</span> -->
+                            <h2>SOMOS RAPIPRINT - SOLUCIONES A SU PUBLICIDAD</h2>
                         </div>
-                        <p>La impresión en gran formato se refiere a imprimir materiales que son demasiado grandes para ser impreso en los tamaños de imprentas comerciales. Hace falta, por tanto, el uso de un equipo que pueda acomodarse a formatos de impresión más grandes de lo habitual.</p>
-                        <p>En la impresión de gran formato, en lugar de imprimirse hojas individuales,  se usan rollos de impresión que se alimentan de forma incremental. A pesar del tamaño que pueden alcanzar estas impresiones, las nuevas tecnologías permiten alcanzar resoluciones verdaderamente increíbles.</p>
-                        <a href="#" class="btn">Saber más</a>
+                        <p>Gracias a las tecnologías en comunicación visual nos hemos especializado en hacer formas gráficas y publicitarias de recordación e impacto ya sea de un producto o marca, prestando un servicio eficaz, creativo e innovador a todos nuestros clientes por tal motivo es un orgullo presentarles un sitio web en el cual podrán encontrar información que puede llenar sus expectativas en sus proyectos. </p>
+                        <h2>POR QUE NOSOTROS?</h2>
+                        <p>Como desarrolladores publicitarios trabajamos de la mano de nuestros clientes para construir sus proyectos de una forma efectiva que den respuesta a sus necesidades dando beneficios a sus empresas.</p>
+                        <h2>NUESTRA EXPERIENCIA</h2>
+                        <p>Somos una empresa con mas de 15 años en el mercado colombiano durante los cuales hemos representado empresas locales y a nivel nacional ofreciendo un respaldo solido en manejo de sus proyectos; ofrecemos un paquete completo de soluciones a su publicidad tanto tradicionales como innovadoras estando al tanto de las más recientes posibilidades de promoción y difusión de productos y servicios.</p>
+                        <p>Nos diferenciamos de otras empresas de publicidad gracias a la calidad de nuestros insumos, la dedicación y responsabilidad que colocamos en cada uno de nuestros trabajos y proyectos, siendo la mejor alternativa para dar:</p><h5><span>#soluciones</span>a<span>su</span>publicidad</h5>
+                        <a href="#noticias" class="btn">Saber más</a>
                     </div>
                 </div>
                 <div class="col-lg-6 col-md-12">
@@ -305,6 +310,9 @@
     <!--? contact-form start -->
     <section class="contact-form-area section-bg  pt-115 pb-120 fix" data-background="assets/img/gallery/section_bg02.jpg">
         <div class="container">
+            <div class="chica col-md-4">
+                <img src="assets/img/comment/call2.png">
+            </div>
             <div class="row justify-content-end">
                 <!-- Contact wrapper -->
                 <div class="col-xl-8 col-lg-9" id="contacto">
@@ -321,92 +329,31 @@
                             </div>
                         </div>
                         <!-- form -->
-                        <form action="#" class="contact-form">
+                        <form action="envia.php" method="post" class="contact-form">
                             <div class="row ">
                                 <div class="col-lg-6 col-md-6">
                                     <div class="input-form">
-                                        <input type="text" placeholder="Nombre">
+                                        <input type="text" name="nombre" placeholder="Nombre" class="campo-form" required>
                                     </div>
                                 </div>
                                 <div class="col-lg-6 col-md-6">
                                     <div class="input-form">
-                                        <input type="text" placeholder="Email">
+                                        <input type="email" name="email" placeholder="Email" class="campo-form" required>
                                     </div>
                                 </div>
-                                <div class="col-lg-12">
+                                <div class="col-lg-6">
                                     <div class="input-form">
-                                        <input type="text" placeholder="Numero de contacto">
+                                        <input type="tel" name="cel" placeholder="Numero de contacto" class="campo-form" required>
                                     </div>
                                 </div>
-                                <!-- <div class="col-lg-6">
-                                    <div class="select-items">
-                                        <select name="select" id="select1">
-                                            <option value="">Freight Type</option>
-                                            <option value="">Catagories One</option>
-                                            <option value="">Catagories Two</option>
-                                            <option value="">Catagories Three</option>
-                                            <option value="">Catagories Four</option>
-                                        </select>
-                                    </div>
-                                </div>
-                                <div class="col-lg-6 col-md-6">
+                                <div class="col-lg-6">
                                     <div class="input-form">
-                                        <input type="text" placeholder="City of Departure">
+                                        <textarea name="consulta" class="campo-form" placeholder="Mensaje"></textarea>
                                     </div>
                                 </div>
-                                <div class="col-lg-6 col-md-6 col-sm-6">
-                                    <div class="input-form">
-                                        <input type="text" placeholder="Incoterms">
-                                    </div>
-                                </div>
-                                <div class="col-lg-6 col-md-6 col-sm-6">
-                                    <div class="input-form">
-                                        <input type="text" placeholder="Weight">
-                                    </div>
-                                </div>
-                                <!-- Height Width length
-                                <div class="col-lg-4 col-md-6 col-sm-6">
-                                    <div class="input-form">
-                                        <input type="text" placeholder="Height">
-                                    </div>
-                                </div>
-                                <div class="col-lg-4 col-md-6 col-sm-6">
-                                    <div class="input-form">
-                                        <input type="text" placeholder="Width">
-                                    </div>
-                                </div>
-                                <div class="col-lg-4 col-md-6 col-sm-6">
-                                    <div class="input-form">
-                                        <input type="text" placeholder="length">
-                                    </div>
-                                </div> -->
-                                <!-- Radio Button -->
-                                <!-- <div class="col-lg-12">
-                                    <div class="radio-wrapper mb-30 mt-15">
-                                        <label>Extra services:</label>
-                                        <div class="select-radio">
-                                            <div class="radio">
-                                                <input id="radio-1" name="radio" type="radio" checked="">
-                                                <label for="radio-1" class="radio-label">Freight</label>
-                                            </div>
-                                            <div class="radio">
-                                                <input id="radio-2" name="radio" type="radio">
-                                                <label for="radio-2" class="radio-label">Express Delivery</label>
-                                            </div>
-                                            <div class="radio">
-                                                <input id="radio-4" name="radio" type="radio">
-                                                <label for="radio-4" class="radio-label">Insurance</label>
-                                            </div>
-                                            <div class="radio">
-                                                <input id="radio-5" name="radio" type="radio">
-                                                <label for="radio-5" class="radio-label">Packaging</label>
-                                            </div>
-                                        </div>
-                                    </div> 
-                                </div> -->
                                 <!-- Button -->
                                 <div class="col-lg-12">
-                                    <button name="submit" class="submit-btn">Enviar</button>
+                                    <button name="submit" value="Enviar" class="submit-btn">Enviar</button>
                                 </div>
                             </div>
                         </form>	
@@ -549,8 +496,15 @@
                 <div class="col-xl-4 col-lg-5 col-md-8">
                     <div class="testimonial-form text-center">
                         <h3>Siempre escuchando a nuestros clientes siempre creando para la industria Publicitaria.</h3>
-                        <input type="text" placeholder="Incluye Email">
-                        <button name="submit" class="submit-btn">solicitar cotización</button>
+                        <form name="form1" method="post" action="NLprocess.php" class="bk">
+                            <fieldset>
+                                <p class="txt">Deja tu E-mail:<br>
+                                    <input name="email" type="text" size="12" class="txtbox">
+                                    <input type="submit" name="Submit" value="Suscribe" class="suscribe" style="width: 100%; background: #a7cf13;
+                                    padding: 19px 44px; color: #fff; cursor: pointer; text-transform: uppercase; font-size: 14px; border-radius: 5px; border: 0;">
+                                </p>
+                            </fieldset>
+                        </form>
                     </div>
                 </div>
                 <!-- Form End -->
@@ -559,7 +513,7 @@
     </div>
     <!-- Testimonial End -->
     <!--? Blog Area Start -->
-    <div class="home-blog-area section-padding30">
+    <div class="home-blog-area section-padding30" id="noticias">
         <div class="container">
             <!-- Section Tittle -->
             <div class="row">
@@ -632,7 +586,7 @@
                                     <li><a href="#"><i class="ti-user"></i> Alex Herrera</a></li>
                                     <li><a href="#"><i class="ti-comment-alt"></i> 12</a></li>
                                 </ul>
-                                <h3><a href="#">Tenemos todas las fz|acilidades de pago.</a></h3>
+                                <h3><a href="#">Tenemos todas las facilidades de pago.</a></h3>
                             </div>
                         </div>
                     </div>
@@ -652,7 +606,7 @@
                     <div class="row justify-content-between">
                         <div class="col-xl-6 col-lg-6 col-md-6">
                             <div class="wantToWork-caption wantToWork-caption2">
-                                <h2>¡Entendemos la importancia de imprimir en tiempo record!</h2>
+                                <h2>¡Entendemos la importancia de imprimir en tiempo record!</h2><br>
                                 <video width="400" controls>
                                     <source src="assets/video/output_free.mp4" type="video/mp4">
                                     <!-- <source src="mov_bbb.ogg" type="video/ogg"> -->
@@ -686,8 +640,8 @@
                             <div class="footer-tittle">
                                 <h4>Horarios de trabajo</h4>
                                 <ul>
-                                    <li><a href="#">Lunes a Viernes de 9:00 AM a 5:00 PM</a></li>
-                                    <li><a href="#"> Sabados 9:00 AM • 1:00 PM</a></li>
+                                    <li><a href="#">Lunes a Viernes de 8:00 AM a 6:00 PM</a></li>
+                                    <li><a href="#"> Sabados 8:00 AM • 3:00 PM</a></li>
                                 </ul>
                             </div>
                         </div>
@@ -720,9 +674,9 @@
                             <!-- Footer Social -->
                             <div class="footer-social ">
                                 <a href="https://www.facebook.com/Rapi-Print-784769158397792" target="_blank"><i class="fab fa-facebook-f"></i></a>
-                                <a href="https://twitter.com/rapiprint" target="_blank"><i class="fab fa-twitter"></i></a>
                                 <a href="https://www.youtube.com/" target="_blank"><i class="fab fa-youtube"></i></a>
                                 <a href="https://www.instagram.com/rapiprint1722/" target="_blank"><i class="fab fa-instagram"></i></a>
+                                <a href="https://twitter.com/rapiprint" target="_blank"><i class="fab fa-twitter"></i></a>
                             </div>
                         </div>
                     </div>

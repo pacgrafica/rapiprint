@@ -1,0 +1,13 @@
+.chica{
+    position: absolute;
+    z-index: 2;
+}
+.chica img{    
+    height: 100%;
+    width: 100%;
+}
+@media screen and (max-width: 1000px){
+	.chica{
+		display: none;
+	}
+}
